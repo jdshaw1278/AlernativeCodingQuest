@@ -1,0 +1,94 @@
+body {
+    background: #3c0b54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+}
+
+#maintitle {
+    width: 800px;
+    margin: 0 auto;
+    background: #2e2eb0;
+    border: 2px solid #07074a;
+}
+
+h1 {
+    font-size: 200px;
+    font-family: fantasy;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0;
+}
+
+#j {
+    background: url(images/download.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#e {
+    background: url(images/stubborn-person.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#s1 {
+    background: url(images/7daughters.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#s2 {
+    background: url(images/sassy.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#i {
+    background: url(images/wwbg.jpeg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#c {
+    background: url(images/infj-gemini-woman-reading-a-book.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+#a {
+    background: url(images/cats.jpg);
+    background-size: cover;
+    color: #2e2eb0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+
+.info {
+    width: 960px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #f5e8d5;
+}
