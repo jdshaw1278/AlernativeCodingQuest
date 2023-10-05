@@ -6,58 +6,46 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: blanchedalmond;
 }
-
 .header, .footer {
     text-align: center;
     font-family: Garamond, 'Times New Roman', Times, serif;
     align-items: center;
 }
-
 h1 {
     font-size: 200px;
     text-shadow: 2px 2px 8px #d7a2f1;
     margin: 0;
     padding: 0;
 }
-
 h2 {
     margin-top: -50px;
     padding: 0;
     margin-bottom: 50px;
 }
-
 .imbedded_img1 {
     float: left;
     margin-right: 10px;
     text-align: center;
     font-size: x-small;
 }
-
 .imbedded_img1 img {
     max-height: 250px;
 }
-
 p {
     text-align: jusfity;
 }
-
-
-
 .imbedded_img2 {
     float: right;
     margin-right: 10px;
     text-align: center;
     font-size: x-small;
 }
-
 .imbedded_img2 img {
     max-height: 250px;
 }
-
 .source {
     text-align: right;
 }
-
 a {
     color: #f5e8d5;
 }
