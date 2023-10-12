@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lvl3p1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="../images/HelveticaNeue Light.ttf">
+    <link rel="stylesheet" href="https://use.typekit.net/skk1riq.css">
+    <title>Alternate 3.2 - News Article Copy Improvements</title>    
+</head>
+<body>
+    <div class="grid1container" id="homepageHeader">
+        <div class="logoArea">
+            <a href="http://toooeleonline.com/" title="Tooele Transcript" target="_blank"><img src="../images/ttbLogo.png" alt="Tooele Transcript"></a>
+        </div>
+            <div class="ad1space">
+                <img src="../images/adspace.jpg" alt="Ad Space Holder">
+        </div>
+        <div id="menuSpace">
+
+        </div>
+    </div>
+    <div class="grid2container">
+        <div class="ad2space">
+
+        </div>
+        <div class="container3">
+            <div class="slideshow">
+                <div class="slide fade">
+                    <div class="picNumber">1 / 5</div>
+                    <img src="../images/fire1.jpg" style="width:100%">
+                    <figcaption>courtesy Tooele Fire Department</figcaption>
+                </div>
+                <div class="slide fade">
+                    <div class="picNumber">2 / 5</div>
+                    <img src="../images/fire2.jpg" style="width:100%">
+                    <figcaption>courtesy Tooele Fire Department</figcaption>
+                </div>
+                <div class="slide fade">
+                    <div class="picNumber">3 / 5</div>
+                    <img src="../images/fire3.jpg" style="width:100%">
+                    <figcaption>courtesy Tooele Fire Department</figcaption>
+                </div>
+                <div class="slide fade">
+                    <div class="picNumber">4 / 5</div>
+                    <img src="../images/fire4.jpg" style="width:100%">
+                    <figcaption>courtesy Tooele Fire Department</figcaption>
+                </div>
+                <div class="slide fade">
+                    <div class="picNumber">5 / 5</div>
+                    <img src="../images/fire5.jpg" style="width:100%">
+                    <figcaption>courtesy Tooele Fire Department</figcaption>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("slide");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+            <div class="grid4container">
+                <div class="leftSide">
+
+                </div>
+                <div class="rightSide">
+                    <div id="mainTitle">
+                        <span id="date">OCTOBER 4, 2023</span>
+                        <br>Suspicious fire on Broadway Street
+                    </div>
+                    <div id="mainBody">
+                        <p>News article content (include max-width modifier) </p>
+            
+                        <p>Firefighters are calling an early morning fire on Wednesday, Oct. 4, on Tooele City's Broadway Street suspicious.</p>
+
+                        <p>The fire occurred at 126 N. Broadway Street in an abandoned building at 5:09 a.m., according to Tooele City Fire Chief Matt McCoy.</p>
+
+                        <p>When firefighters arrived, they found the entire second floor engulfed in flames.</p>
+
+                        <p>It took firefighters over an hour and a half to put out the fire. After it was put out, they called the Tooele County fire marshal and the state fire marshal to investigate. They were on scene until Wednesday afternoon investigating.</p>
+
+                        <p>No injuries were reported, and the cause of the fire is still under investigation, but it has been labeled as suspicious, McCoy said.</p>
+
+                        <p>As of 3:30 p.m. on Wednesday, Oct. 4, investigators were still on the scene and Broadway Street north of Elm and south of Date Streets was closed.</p>
+
+                        <div id="author">
+                            <br><h3>Ceilly Sutton</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submitComment">
+                <h2>Comments?  Feedback?  We'd love to hear them!</h2>
+                <form action="/action_page.php">
+                    <label for="name">Name:</label> 
+                        <input type="text" id="name" name="fullName" value="John Doe"><br>
+                    <input type="checkbox" id="residentTC" name="tooeleResident" value="Live">
+                        <label for="residentTC"> I live in Tooele County</label><br>
+                    <input type="checkbox" id="workTC" name="tooeleWork" value="Work">
+                        <label for="WorkTC"> I work in Tooele County</label><br>
+                    <input type="checkbox" id="visitTC" name="tooeleVisit" value="Visit">
+                        <label for="visitTC"> I visit Tooele County regularly</label><br>
+                    <input type="checkbox" id="noTC" name="tooeleNot" value="Not">
+                        <label for="noTC"> I do not work in, live in, or visit Tooele County regularly</label><br>
+                    <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="feedback" rows="20" cols="60">Leave any comments or feedback here!</textarea><br>
+                    <button type="button" onclick="alert('This is where the data would be submitted to a database if this were a fully supported and real news site.')">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="linksFooter">
+        <p>empty space</p>
+    </div>
+    
+</body>
+</html>

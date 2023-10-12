@@ -1,0 +1,195 @@
+* {box-sizing: border-box;}
+
+body {
+    border-top: 5px solid #d2232a;
+    font-family: 'Source Sans Pro', 'HelveticaNeue Light',Arial, Helvetica Neue, sans-serif;
+    line-height: 21px;
+    font-size: 16px;
+    color: #444;
+    margin: auto;
+}
+
+.grid1container {
+    width: 980px;
+    display: grid;
+    grid-template-columns: 320px 648px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#homepageHeader {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logoArea {
+    grid-column-start: 1;
+    width: 320px;
+    margin-right: 10px;
+}
+
+.ad1space {
+    grid-column-start: 2;
+    width: 648px;
+}
+
+#menuSpace {
+    grid-row-start: 2;
+    grid-column: span 2;
+    background-color: #444;
+    height: 50px;
+}
+
+.grid2container {
+    width: 980px;
+    display: grid;
+    grid-template-columns: 659px 270px;
+    margin: auto;
+}
+
+.ad2space {
+    grid-column-start: 2;
+    grid-row: 1/-1;
+    background-image: url(../images/adspace.jpg);
+    background-repeat: round;
+    margin-left: 25px;
+}
+
+.container3 {
+    border-right: 1px solid #eee;
+    padding-right: 25px;
+    margin-top: 0px;
+    padding-top: 10px;
+    grid-column-start: 1;
+    grid-row: 1/-1;
+}
+
+.slide {
+    display: none;
+}
+
+.slideshow {
+    max-width: 655px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.picNumber {
+    color: #444;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opactiy: .4}
+    to {opacity: 1;}
+}
+
+.grid4container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 195px 425px;
+    grid-column-gap: 20px;
+}
+
+.leftSide {
+    grid-column-start: 1;
+    grid-row: 1/-1;
+    background-image: url(../images/adspace.jpg);
+    background-repeat: round;
+    padding-right: 20px;
+}
+
+.rightSide {
+    grid-column-start: 2;
+    grid-row: 1/-1;
+    margin-bottom: 50px;
+
+}
+
+#mainTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    line-height: 32px;
+    font-family: "Raleway", "HelveticaNeue Light";
+}
+
+#date {
+    background: #005dab;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+#mainBody {
+    max-width: 415px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+#author {
+    line-height: 20px;
+    font-size: 100%;
+    text-decoration: none;
+    color: #272727;
+    font-weight: 700;
+}
+
+.linksFooter {
+    padding-bottom: 230px;
+    background-color: #343434;
+    color: #343434;
+    border-top: 5px solid #eee;
+    padding-top: 10px;
+    text-transform: capitalize;
+    text-align: left;
+}
