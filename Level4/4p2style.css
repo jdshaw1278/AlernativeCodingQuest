@@ -1,0 +1,111 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: #272727;
+    color: #ff6330;
+    font-family: "Glass Antiqua", serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    font-size: 65px;
+}
+
+a {
+    color: #ff6330;
+}
+
+a:hover {
+    color: #12a76f;
+}
+
+#logo_name {
+    padding-left: 10px;
+    flex: 0 0 528px;
+}
+
+#page_links {
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-top: 45px;
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+#landing {
+    position: relative;
+}
+
+#landing img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#calltoaction {
+    font-family: "Englebert", sans-serif;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(18, 167, 111, 0.75);
+    color: #fcee57;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+#calltoaction button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.fcolumn {
+    float: left;
+    width: 20%;
+    height: 150px;
+    padding: 10px;
+}
+
+.emaillist_container {
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 75%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+#info_links, #post_mail {
+    font-size: 30px;
+}
+
+#post_mail, #logo_button {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
