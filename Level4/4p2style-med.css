@@ -1,0 +1,44 @@
+@media only screen and (min-width: 37.5em) {
+    header {
+        width: 500px;
+    }
+    header img {
+        max-width: 375px;
+        height: auto;
+    }
+    
+    #page_links_lg, #page_links button {
+        display: none;
+    }
+
+    #page_links ul.hide {
+        margin-left: 2%;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        margin: 0;
+    }
+
+    #page_links ul li {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: 0.8rem 1rem;
+        padding-top: 25px;
+        padding-left: 50px;
+        display: inline-block;
+        width: 125px;
+    }
+
+    #calltoaction {
+        width: 395px;
+        height: 110px;
+        background-color: rgba(18, 167, 111, 0.75);
+    }
+    
+    #calltoaction button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

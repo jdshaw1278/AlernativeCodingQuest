@@ -1,0 +1,66 @@
+@media only screen and (min-width: 60em) {
+    header {
+        width: 100%;
+        font-size: 65px;
+        display: flex;
+    }
+
+    header img {
+        width: 527px;
+        height: auto;
+    }
+
+    a:hover {
+        color: #12a76f;
+    }
+    
+    #logo_name {
+        padding-left: 10px;
+        flex: 0 0 528px;
+    }
+    
+    #page_links {
+        display: none;
+    }
+
+    .hcolumn {
+        margin: auto;
+        width: 75%;
+    }
+
+    #page_links_lg {
+        padding-left: 75px;
+        padding-right: 50px;
+        padding-top: 45px;
+        flex: 1;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .fcolumn {
+        float: left;
+        width: 20%;
+        height: 150px;
+    }
+
+    #socialmedia {
+        width: 150px;
+    }
+    
+    .emaillist_container {
+        text-align: center;
+    }
+    
+    
+    #post_mail, #logo_button {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
